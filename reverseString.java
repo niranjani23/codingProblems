@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
-public class ReverseString {
+public class reverseString {
 	  public static String reverseWords(String message) {
 		
 		Stack s = new Stack();
