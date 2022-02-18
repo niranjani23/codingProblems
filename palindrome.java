@@ -1,8 +1,7 @@
 public class palindrome {
-
-    public static void main(String[] args) {
-
-        String originalstr = "racecar";
+    
+    public boolean checkForPalindrome(String originalstr)
+    {
         String reversestr = "";
 
         int strlength = originalstr.length();
@@ -14,11 +13,25 @@ public class palindrome {
         }
         //Comparing two strings using equals method
         if(originalstr.equals(reversestr))
+        {
             System.out.println("It's a palindrome");
+            return true;
+        }
+        
             else
+            {
                 System.out.println("It's not a palindrome");
+                return false;
+            }
+                
+        
+    }
 
+    public static void main(String[] args) {
 
+       // Initialize and instantiate the palindrome object - "check"
+       palindrome check = new palindrome();
+       check.checkForPalindrome("racecar");
 
     }
 }
